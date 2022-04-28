@@ -67,7 +67,7 @@ after approximately 6-8h of focused work:
 ## 5) try more algorithms for classification / find best params with gridsearch
 
 # Update 2022/04/28 (approx 2.5h work)
-added jupyter-notebook [MPV_failed02.ipynb](MPV_failed02.ipynb), where I've tried to explore points 1), 4), 5).
+added jupyter-notebook [MPV_failed02.ipynb](https://github.com/buddhaha/air_pressure/blob/main/MVP_failed02.ipynb), where I've tried to explore points 1), 4), 5).
 As using histogram bins from pressure measurements didnt seem to improve the performance, I used statistics extracted from *p* values as in the first case. 
 Testing performance of GradientBoostingClassifier and SGDClassifier w StandardScaler.
 Resampling of a test set: oversampling, undersampling, data augmentation using SMOTE and testing
