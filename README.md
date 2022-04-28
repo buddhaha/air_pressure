@@ -65,3 +65,16 @@ after approximately 6-8h of focused work:
 ## 3) improve input data : fill missing values (build separe model for e.g. slowstart/slowend col, use interpolate functions to approximate missing values)
 ## 4) try to deal with the imbalanced data set problem (e.g. Resampling (Oversampling and Undersampling); SMOTE;BalancedBaggingClassifier)
 ## 5) try more algorithms for classification / find best params with gridsearch
+
+# Update 2022/04/28 (approx 2.5h work)
+added jupyter-notebook [MPV_failed02.ipynb](MPV_failed02.ipynb), where I've tried to explore points 1), 4), 5).
+As using histogram bins from pressure measurements didnt seem to improve the performance, I used statistics extracted from *p* values as in the first case. 
+Testing performance of GradientBoostingClassifier and SGDClassifier w StandardScaler.
+Resampling of a test set: oversampling, undersampling, data augmentation using SMOTE and testing
+RandomForestClassifier + finding best pars with gridsearch.
+
+However, prediction ability for minority class was not improved much.
+  
+### rather low precision in all cases indicates **underfitting**, as the model faild to learn patterns to recognize minority class.
+### Proposed way: increasse model complexity by increasing the number of features (extract new features from *p* measurements: include quantiles and their stats).
+#### if it won't be enought, we can build a model to predict *SlowStart* and *SlowEnd* so dont have to drop ~1/4 of the dataset.
