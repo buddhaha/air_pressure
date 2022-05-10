@@ -53,7 +53,7 @@ The labels consists of the following columns (in this particular order):
    3) fine tuning e.g. grid search
 
 ### idea behid feature extraction:
-[alt text](https://github.com/buddhaha/air_pressure/pressure.jpg?raw=True)
+![alt text](https://github.com/buddhaha/air_pressure/blob/main/pressure.jpg)
 
 
 after approximately 6-8h of focused work:
