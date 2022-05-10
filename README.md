@@ -51,7 +51,11 @@ The labels consists of the following columns (in this particular order):
    1) explore and clean data
    2) Make a comparison of few models that might work for binary classification (like log reg; random decission tree, svm) to have an idea
    3) fine tuning e.g. grid search
-   
+
+### idea behid feature extraction:
+[alt text](https://github.com/buddhaha/air_pressure/pressure.jpg?raw=True)
+
+
 after approximately 6-8h of focused work:
 - I managed to build a basic model (LogReg; I tried also others but with similar poor results) for binary classification (on imbalanced data ~90% False) based on statistical values from Pressure measurements
 - 1st improvement: using bins from Pressure vals histogram; however model was even worse
